@@ -1,5 +1,27 @@
-
+# yolov4-deepsort added re-id function
 ![ezgif com-video-to-gif (1)-min](https://user-images.githubusercontent.com/48580158/219967412-b7f3462b-8b1a-432a-ad12-e31ab9929e43.gif)
+
+## Getting Started
+To get started, install the proper dependencies either via Anaconda or Pip. I recommend Anaconda route for people using a GPU as it configures CUDA toolkit version for you.
+
+### Conda
+```bash
+# Tensorflow GPU
+conda env create -f conda-gpu.yml
+conda activate yolov4-gpu
+
+pip install easyocr 
+```
+
+## Running the Tracker with YOLOv4
+```bash
+# Run yolov4 deep sort object tracker on 2 video and use video masking and save 2 output video
+python object_tracker_version_1.1.py --video1 ./data/video/test1.mp4 --video2 ./data/video/test2.mp4 --output1 ./outputs/demo1.avi --output2 ./outputs/demo2.avi --model yolov4 --dont_show --info --masking_image ./data/video/masking_img_2.jpg
+```
+
+# Run yolov4 deep sort object tracker on video
+python object_tracker.py --video ./data/video/test.mp4 --output ./outputs/demo.avi --model yolov4
+
 
 # yolov4-deepsort
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
