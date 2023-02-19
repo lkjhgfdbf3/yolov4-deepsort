@@ -19,10 +19,6 @@ pip install easyocr
 python object_tracker_version_1.1.py --video1 ./data/video/test1.mp4 --video2 ./data/video/test2.mp4 --output1 ./outputs/demo1.avi --output2 ./outputs/demo2.avi --model yolov4 --dont_show --info --masking_image ./data/video/masking_img_2.jpg
 ```
 
-# Run yolov4 deep sort object tracker on video
-python object_tracker.py --video ./data/video/test.mp4 --output ./outputs/demo.avi --model yolov4
-
-
 # yolov4-deepsort
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zmeSTP3J5zu2d5fHgsQC06DyYEYJFXq1?usp=sharing)
